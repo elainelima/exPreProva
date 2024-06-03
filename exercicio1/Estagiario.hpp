@@ -1,5 +1,5 @@
-#ifndef GERENTE
-#define GERENTE
+#ifndef ESTAGIARIO
+#define ESTAGIARIO
 #include <string>
 #include "Funcionario.hpp"
 using std::string;

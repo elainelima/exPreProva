@@ -8,8 +8,9 @@ class Funcionario{
         string nome;
         int id;
         double salarioBase;
-    protected:
+    public:
         Funcionario(string nome, int id, double salarioBase);
+        virtual double calcularSalarioTotal();
 
 };
 #endif

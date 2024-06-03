@@ -1,15 +1,8 @@
-#ifndef FUNCIONARIO
-#define FUNCIONARIO
-#include <string>
-using std::string;
+#include "Funcionario.hpp"
 
-class Funcionario{
-    private:
-        string nome;
-        int id;
-        double salarioBase;
-    protected:
-        Funcionario(string nome, int id, double salarioBase);
+Funcionario::Funcionario(string nome, int id, double salarioBase):nome(nome), id(id), salarioBase(salarioBase){
 
-};
-#endif
+}
+double  Funcionario::calcularSalarioTotal(){
+    return salarioBase;
+}
