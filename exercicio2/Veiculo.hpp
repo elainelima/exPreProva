@@ -1,15 +1,18 @@
-#ifndef FUNCIONARIO
-#define FUNCIONARIO
+#ifndef VEICULO
+#define VEICULO
 #include <string>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::string;
 
-class Funcionario{
-    private:
-        string nome;
-        int id;
-        double salarioBase;
+class Veiculo {
     protected:
-        Funcionario(string nome, int id, double salarioBase);
-
+        std::string marca;
+        std::string modelo;
+        int capacidade; // Capacidade de carga em toneladas
+    public:
+        Veiculo(const std::string& marca, const std::string& modelo, int capacidade) : marca(marca), modelo(modelo), capacidade(capacidade) {}
+        virtual void exibirDados();
 };
 #endif
