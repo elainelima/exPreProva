@@ -3,6 +3,6 @@
 Gerente::Gerente(string nome, int id, double salarioBase, double bonusAnual):Funcionario(nome, id, salarioBase){
 
 }
-double Funcionario::calcularSalarioTotal(){
+double Gerente::calcularSalarioTotal(){
     return salarioBase + bonusAnual;
 }

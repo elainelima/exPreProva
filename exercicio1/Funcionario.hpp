@@ -4,7 +4,7 @@
 using std::string;
 
 class Funcionario{
-    private:
+    protected:
         string nome;
         int id;
         double salarioBase;
