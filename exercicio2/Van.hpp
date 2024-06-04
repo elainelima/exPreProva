@@ -12,10 +12,6 @@ class Van :public Veiculo{
         int passageiros;
     public:
         Van(const std::string& marca, const std::string& modelo, int capacidade, int passageiros):Veiculo(marca, modelo, capacidade), passageiros(passageiros){}
-        void exibirDados() const override {
-            std::cout << "Van - ";
-            Veiculo::exibirDados();
-            std::cout << "Passageiros: " << passageiros << "\n";
-        }
+        void exibirDados() const override;
 };
 #endif

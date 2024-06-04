@@ -1,15 +1,11 @@
-#ifndef FUNCIONARIO
-#define FUNCIONARIO
-#include <string>
+#include "Veiculo.hpp"
+#include <iostream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::string;
 
-class Funcionario{
-    private:
-        string nome;
-        int id;
-        double salarioBase;
-    protected:
-        Funcionario(string nome, int id, double salarioBase);
-
-};
-#endif
+Veiculo::Veiculo(const std::string& marca, const std::string& modelo, int capacidade) : marca(marca), modelo(modelo), capacidade(capacidade) {}
+void Veiculo::exibirDados() const{
+     std::cout << "Marca: " << marca << ", Modelo: " << modelo << ", Capacidade: " << capacidade << " toneladas\n";
+}

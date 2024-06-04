@@ -12,6 +12,6 @@ class Caminhao : public Veiculo{
         int eixos;
     public:
         Caminhao(const std::string& marca, const std::string& modelo, int capacidade, int eixos);
-        void exibirDados();
+        void exibirDados() const override;
     };
 #endif
