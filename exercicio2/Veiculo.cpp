@@ -1,6 +1,5 @@
 #include "Veiculo.hpp"
 #include <iostream>
-#include <iostream>
 using std::cout;
 using std::endl;
 using std::string;

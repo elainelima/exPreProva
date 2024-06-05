@@ -12,7 +12,7 @@ class Veiculo {
         std::string modelo;
         int capacidade; // Capacidade de carga em toneladas
     public:
-        Veiculo(const std::string& marca, const std::string& modelo, int capacidade) : marca(marca), modelo(modelo), capacidade(capacidade) {}
+        Veiculo(const std::string& marca, const std::string& modelo, int capacidade);
         virtual void exibirDados() const;
 };
 #endif
